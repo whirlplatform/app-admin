@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application id="1CB254A1-EB5D-44B9-AF1C-17363B17EC73" name="Administration" metaversion="1">
+  <properties>
+    <title replace="false">
+      <defaultLocale locale="en"/>
+      <locales>
+        <value locale="en" type="STRING"><![CDATA[Administration]]></value>
+        <value locale="ru" type="STRING"><![CDATA[Администрирование]]></value>
+      </locales>
+    </title>
+    <code><![CDATA[whirl-admin]]></code>
+    <enabled>true</enabled>
+    <guest>false</guest>
+    <htmlHeader><![CDATA[]]></htmlHeader>
+  </properties>
+  <defaultLocale language="en"/>
+  <locales>
+    <locale language="ru"/>
+  </locales>
+  <references/>
+  <components>
+    <component id="757BDEA2-A277-41C1-9F56-E048FCD07D3A" name="BorderContainer" type="BorderContainerBuilder">
+      <properties>
+        <property name="Height" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">1.0</value>
+          </locales>
+        </property>
+        <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">3.0</value>
+          </locales>
+        </property>
+        <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">3.0</value>
+          </locales>
+        </property>
+        <property name="LayoutData:Height" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">1.0</value>
+          </locales>
+        </property>
+        <property name="Enabled" type="BOOLEAN" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="BOOLEAN">true</value>
+          </locales>
+        </property>
+        <property name="LayoutData:Width" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">1.0</value>
+          </locales>
+        </property>
+        <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">3.0</value>
+          </locales>
+        </property>
+        <property name="Width" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">1.0</value>
+          </locales>
+        </property>
+        <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+          <defaultLocale locale="en"/>
+          <locales>
+            <value locale="en" type="NUMBER">3.0</value>
+          </locales>
+        </property>
+      </properties>
+      <children>
+        <component id="0EEA384D-1ACA-44D5-934E-0CD66F854BFB" name="TabPanel 1" type="TabPanelBuilder">
+          <properties>
+            <property name="Height" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">1.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">3.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">3.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+              </locales>
+            </property>
+            <property name="LayoutData:Height" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">1.0</value>
+              </locales>
+            </property>
+            <property name="Enabled" type="BOOLEAN" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="BOOLEAN">true</value>
+              </locales>
+            </property>
+            <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="STRING"><![CDATA[Center]]></value>
+              </locales>
+            </property>
+            <property name="LayoutData:Width" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">1.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">3.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:Location" type="STRING" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="STRING"><![CDATA[Center]]></value>
+              </locales>
+            </property>
+            <property name="Width" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">1.0</value>
+              </locales>
+            </property>
+            <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+              <defaultLocale locale="en"/>
+              <locales>
+                <value locale="en" type="NUMBER">3.0</value>
+              </locales>
+            </property>
+          </properties>
+          <children>
+            <component id="625A8EBE-22B5-4196-B23A-BF8FE7203283" name="Users tab" type="TabItemBuilder">
+              <properties>
+                <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                  </locales>
+                </property>
+                <property name="Enabled" type="BOOLEAN" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="BOOLEAN">true</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                  </locales>
+                </property>
+                <property name="Title" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Users]]></value>
+                  </locales>
+                </property>
+                <property name="LayoutData:Index" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">0.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+              </properties>
+              <children>
+                <component id="7B072C3D-69F0-4E3B-B27B-C56C3C093F5D" name="Users grid" type="EditGridBuilder">
+                  <properties>
+                    <property name="Height" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                      </locales>
+                    </property>
+                    <property name="DefaultRowsPerPage" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">20.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowDataButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="Enabled" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                      </locales>
+                    </property>
+                    <property name="ShowFindButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowPagingToolbar" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowRefreshButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="DataSource" type="LIST" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="LIST">
+                          <id>82F5FBC4-BD6D-4CC9-B6FE-498E9FA3EF84</id>
+                          <label><![CDATA[whirl_users - Users]]></label>
+                        </value>
+                      </locales>
+                    </property>
+                    <property name="ShowExportButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowMethodButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="Width" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                  </properties>
+                </component>
+              </children>
+            </component>
+            <component id="8BF921E1-A455-4ED7-AB7D-E1A18DC88C8E" name="Applications tab" type="TabItemBuilder">
+              <properties>
+                <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                  </locales>
+                </property>
+                <property name="Enabled" type="BOOLEAN" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="BOOLEAN">true</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                  </locales>
+                </property>
+                <property name="Title" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Applications]]></value>
+                  </locales>
+                </property>
+                <property name="LayoutData:Index" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">1.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+              </properties>
+              <children>
+                <component id="1269AA4F-70D7-4D73-A9B8-45620716E7B3" name="Applications grid" type="EditGridBuilder">
+                  <properties>
+                    <property name="Height" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                      </locales>
+                    </property>
+                    <property name="DefaultRowsPerPage" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">20.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowDataButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="Enabled" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                      </locales>
+                    </property>
+                    <property name="ShowFindButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowPagingToolbar" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowRefreshButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="DataSource" type="LIST" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="LIST">
+                          <id>E4801F9C-ACD6-44DF-B358-F5C5C2E4E5EA</id>
+                          <label><![CDATA[whirl_user_apps - User applications]]></label>
+                        </value>
+                      </locales>
+                    </property>
+                    <property name="ShowExportButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowMethodButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="Width" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                  </properties>
+                </component>
+              </children>
+            </component>
+            <component id="F59C9CB3-5037-4CEC-86EC-40A8EB75A0B1" name="Groups tab" type="TabItemBuilder">
+              <properties>
+                <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                  </locales>
+                </property>
+                <property name="Enabled" type="BOOLEAN" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="BOOLEAN">true</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                  </locales>
+                </property>
+                <property name="Title" type="STRING" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="STRING"><![CDATA[Groups]]></value>
+                  </locales>
+                </property>
+                <property name="LayoutData:Index" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">2.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+                <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                  <defaultLocale locale="en"/>
+                  <locales>
+                    <value locale="en" type="NUMBER">3.0</value>
+                  </locales>
+                </property>
+              </properties>
+              <children>
+                <component id="14FAEF2F-DD37-4888-BFCE-14F42EE8C92C" name="Groups grid" type="EditGridBuilder">
+                  <properties>
+                    <property name="Height" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginBottom" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:VerticalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Middle]]></value>
+                      </locales>
+                    </property>
+                    <property name="DefaultRowsPerPage" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">20.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowDataButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="Enabled" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:HorizontalAlign" type="STRING" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="STRING"><![CDATA[Center]]></value>
+                      </locales>
+                    </property>
+                    <property name="ShowFindButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginTop" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="ShowPagingToolbar" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowRefreshButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginRight" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="DataSource" type="LIST" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="LIST">
+                          <id>08FC3D78-695A-4CB7-B6A2-FBC871EDD7C6</id>
+                          <label><![CDATA[whirl_user_groups - User groups]]></label>
+                        </value>
+                      </locales>
+                    </property>
+                    <property name="ShowExportButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="ShowMethodButtons" type="BOOLEAN" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="BOOLEAN">true</value>
+                      </locales>
+                    </property>
+                    <property name="LayoutData:MarginLeft" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">3.0</value>
+                      </locales>
+                    </property>
+                    <property name="Width" type="NUMBER" replace="false">
+                      <defaultLocale locale="en"/>
+                      <locales>
+                        <value locale="en" type="NUMBER">1.0</value>
+                      </locales>
+                    </property>
+                  </properties>
+                </component>
+              </children>
+            </component>
+          </children>
+        </component>
+      </children>
+    </component>
+  </components>
+  <datasources>
+    <datasource id="2CA3D6B5-29E2-4B87-8279-C32BCDDE17F6" name="metadata">
+      <alias>metadata</alias>
+      <databaseName>metadata</databaseName>
+      <schemas>
+        <schema id="22A63665-6619-4140-804E-8FA08B30349B" name="whirl">
+          <schemaName>whirl</schemaName>
+          <tables>
+            <table id="82F5FBC4-BD6D-4CC9-B6FE-498E9FA3EF84" name="whirl_users - Users">
+              <title replace="false">
+                <defaultLocale locale="en"/>
+                <locales>
+                  <value locale="en" type="STRING"><![CDATA[Users]]></value>
+                  <value locale="ru" type="STRING"><![CDATA[Users]]></value>
+                </locales>
+              </title>
+              <emptyRow>false</emptyRow>
+              <tableName>whirl_users</tableName>
+              <idColumnId>FB007BF6-0C39-4E4F-8479-E7290B4F764A</idColumnId>
+              <deleteColumnId>374FB301-C86B-427F-86EA-7063CBAB4229</deleteColumnId>
+              <columns>
+                <column id="6F679BB7-F565-434E-BE91-4ABF090ED120" name="Login - login">
+                  <index>2</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Login]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[login]]></value>
+                    </locales>
+                  </title>
+                  <columnName>login</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>150</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>true</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="053E7FC7-E279-4D40-9349-985459A91A89" name="Creation date - creation_date">
+                  <index>6</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Creation date]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[creation_date]]></value>
+                    </locales>
+                  </title>
+                  <columnName>creation_date</columnName>
+                  <type><![CDATA[DATE]]></type>
+                  <width>150</width>
+                  <height>null</height>
+                  <size>29</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="FB007BF6-0C39-4E4F-8479-E7290B4F764A" name="Id - id">
+                  <index>0</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Id]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[id]]></value>
+                    </locales>
+                  </title>
+                  <columnName>id</columnName>
+                  <type><![CDATA[NUMBER]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>null</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="374FB301-C86B-427F-86EA-7063CBAB4229" name="Deleted - deleted">
+                  <index>1</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Deleted]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[deleted]]></value>
+                    </locales>
+                  </title>
+                  <columnName>deleted</columnName>
+                  <type><![CDATA[BOOLEAN]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>1</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>false</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>true</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="80E10BAB-D3B2-47F7-A3DB-71EF7266FDF4" name="Password hash - password_hash">
+                  <index>3</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Password hash]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[password_hash]]></value>
+                    </locales>
+                  </title>
+                  <columnName>password_hash</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>100</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>false</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="A90F61D6-3102-4F39-9842-AFA1E055E990" name="Name - name">
+                  <index>4</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Name]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[name]]></value>
+                    </locales>
+                  </title>
+                  <columnName>name</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>200</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>true</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="F70CCDFF-8FE7-4816-ABA8-1F8BA12B01CF" name="Email - email">
+                  <index>5</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Email]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[email]]></value>
+                    </locales>
+                  </title>
+                  <columnName>email</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>150</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>false</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+              </columns>
+            </table>
+            <table id="08FC3D78-695A-4CB7-B6A2-FBC871EDD7C6" name="whirl_user_groups - User groups">
+              <title replace="false">
+                <defaultLocale locale="en"/>
+                <locales>
+                  <value locale="en" type="STRING"><![CDATA[User groups]]></value>
+                  <value locale="ru" type="STRING"><![CDATA[User groups]]></value>
+                </locales>
+              </title>
+              <emptyRow>false</emptyRow>
+              <tableName>whirl_user_groups</tableName>
+              <idColumnId>D00525A9-6AE6-4E41-B688-E6CD9B9CD9E6</idColumnId>
+              <deleteColumnId>21968771-5419-4401-96FA-F5365D28D563</deleteColumnId>
+              <columns>
+                <column id="B7393FAB-A7B2-4234-B131-485300274276" name="Group code - group_code">
+                  <index>3</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Group code]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[group_code]]></value>
+                    </locales>
+                  </title>
+                  <columnName>group_code</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>150</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="1947B6BE-FB8A-4F45-BD50-2A6D467C856D" name="User - r_whirl_users">
+                  <index>2</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[User]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[r_whirl_users]]></value>
+                    </locales>
+                  </title>
+                  <columnName>r_whirl_users</columnName>
+                  <type><![CDATA[LIST]]></type>
+                  <width>200</width>
+                  <height>null</height>
+                  <size>null</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                  <listTable><![CDATA[82F5FBC4-BD6D-4CC9-B6FE-498E9FA3EF84]]></listTable>
+                </column>
+                <column id="21968771-5419-4401-96FA-F5365D28D563" name="Deleted - deleted">
+                  <index>1</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Deleted]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[deleted]]></value>
+                    </locales>
+                  </title>
+                  <columnName>deleted</columnName>
+                  <type><![CDATA[BOOLEAN]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>1</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>false</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>true</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="D00525A9-6AE6-4E41-B688-E6CD9B9CD9E6" name="Id - id">
+                  <index>0</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Id]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[id]]></value>
+                    </locales>
+                  </title>
+                  <columnName>id</columnName>
+                  <type><![CDATA[NUMBER]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>null</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+              </columns>
+            </table>
+            <table id="E4801F9C-ACD6-44DF-B358-F5C5C2E4E5EA" name="whirl_user_apps - User applications">
+              <title replace="false">
+                <defaultLocale locale="en"/>
+                <locales>
+                  <value locale="en" type="STRING"><![CDATA[User applications]]></value>
+                  <value locale="ru" type="STRING"><![CDATA[Users]]></value>
+                </locales>
+              </title>
+              <emptyRow>false</emptyRow>
+              <tableName>whirl_user_apps</tableName>
+              <idColumnId>039F47E0-22EF-46AC-9B32-43B82265953E</idColumnId>
+              <deleteColumnId>2342186E-91DA-4CAD-A0EA-30BCF5D002F7</deleteColumnId>
+              <columns>
+                <column id="2634AC83-C965-4CE8-BC5A-28A64704B4C2" name="Application code - application_code">
+                  <index>3</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Application code]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[application_code]]></value>
+                    </locales>
+                  </title>
+                  <columnName>application_code</columnName>
+                  <type><![CDATA[STRING]]></type>
+                  <width>150</width>
+                  <height>null</height>
+                  <size>4000</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="2342186E-91DA-4CAD-A0EA-30BCF5D002F7" name="Deleted - deleted">
+                  <index>1</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Deleted]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[deleted]]></value>
+                    </locales>
+                  </title>
+                  <columnName>deleted</columnName>
+                  <type><![CDATA[BOOLEAN]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>1</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>false</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>true</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="039F47E0-22EF-46AC-9B32-43B82265953E" name="Id - id">
+                  <index>0</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[Id]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[id]]></value>
+                    </locales>
+                  </title>
+                  <columnName>id</columnName>
+                  <type><![CDATA[NUMBER]]></type>
+                  <width>25</width>
+                  <height>null</height>
+                  <size>null</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                </column>
+                <column id="9EC5AB28-091E-4B88-B5EF-6B23C6A2FEB9" name="User - r_whirl_users">
+                  <index>2</index>
+                  <title replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales>
+                      <value locale="en" type="STRING"><![CDATA[User]]></value>
+                      <value locale="ru" type="STRING"><![CDATA[r_whirl_users]]></value>
+                    </locales>
+                  </title>
+                  <columnName>r_whirl_users</columnName>
+                  <type><![CDATA[LIST]]></type>
+                  <width>200</width>
+                  <height>null</height>
+                  <size>null</size>
+                  <scale>null</scale>
+                  <defaultValue><![CDATA[]]></defaultValue>
+                  <notNull>true</notNull>
+                  <listTitle>false</listTitle>
+                  <hidden>false</hidden>
+                  <dataFormat></dataFormat>
+                  <color></color>
+                  <regex><![CDATA[]]></regex>
+                  <regexMessage replace="false">
+                    <defaultLocale locale="en"/>
+                    <locales/>
+                  </regexMessage>
+                  <function><![CDATA[]]></function>
+                  <filter>true</filter>
+                  <defaultOrder>false</defaultOrder>
+                  <listTable><![CDATA[82F5FBC4-BD6D-4CC9-B6FE-498E9FA3EF84]]></listTable>
+                </column>
+              </columns>
+            </table>
+          </tables>
+        </schema>
+      </schemas>
+    </datasource>
+  </datasources>
+  <groups>
+    <group id="5B3B7072-3293-4B6C-A967-49C963471DD2" name="Administrator" groupName="whirl-admin-admin"/>
+  </groups>
+  <rights>
+    <tableRights>
+      <collection id="A22616FD-3F6F-403B-9ECF-D8FB4662F1D4" tableId="82F5FBC4-BD6D-4CC9-B6FE-498E9FA3EF84">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="RESTRICT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="ADD">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="DELETE">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="DELETE">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="RESTRICT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="ADD">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="89272ED1-099E-4320-8202-D385F69B0A70" tableId="08FC3D78-695A-4CB7-B6A2-FBC871EDD7C6">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="RESTRICT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="ADD">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="DELETE">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="DELETE">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="RESTRICT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="ADD">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="6073FBA6-AC5B-474B-98C4-BC6DDD136B0B" tableId="E4801F9C-ACD6-44DF-B358-F5C5C2E4E5EA">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="RESTRICT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="ADD">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="DELETE">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="DELETE">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="RESTRICT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="ADD">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+    </tableRights>
+    <tableColumnRights>
+      <collection id="7455A484-E34B-475E-8B61-00AEE79AB769" tableColumnId="6F679BB7-F565-434E-BE91-4ABF090ED120">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="19E16241-A0E8-404D-9616-2DE95EF5AE60" tableColumnId="F70CCDFF-8FE7-4816-ABA8-1F8BA12B01CF">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="85D62FC2-73FB-4450-A3B2-11D820F704CC" tableColumnId="D00525A9-6AE6-4E41-B688-E6CD9B9CD9E6">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="7BA0A7BA-696C-45C6-86E5-81AAE13A1492" tableColumnId="FB007BF6-0C39-4E4F-8479-E7290B4F764A">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="4780BEAB-40B7-433C-A62A-5391CF4B0F40" tableColumnId="21968771-5419-4401-96FA-F5365D28D563">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="27ACAB70-A341-413D-9BF4-E351D2E23EDA" tableColumnId="039F47E0-22EF-46AC-9B32-43B82265953E">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="58E1C02C-E72F-4772-9987-8E8E0B1BBAC7" tableColumnId="2342186E-91DA-4CAD-A0EA-30BCF5D002F7">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="320DBA4B-4056-4C85-A2A4-9ED1101371B3" tableColumnId="374FB301-C86B-427F-86EA-7063CBAB4229">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="26886952-D9DE-47DF-AA59-DC2B58179900" tableColumnId="B7393FAB-A7B2-4234-B131-485300274276">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="12B73C73-4329-476D-AA5E-B29809FB833A" tableColumnId="9EC5AB28-091E-4B88-B5EF-6B23C6A2FEB9">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="5BDAD565-3730-46DF-99EA-CC13EA1F80C4" tableColumnId="2634AC83-C965-4CE8-BC5A-28A64704B4C2">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="10E04B07-CCC8-4D03-B248-EB8627D001CB" tableColumnId="053E7FC7-E279-4D40-9349-985459A91A89">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="B50484D2-09DA-4B98-95F0-9041DA551AC3" tableColumnId="80E10BAB-D3B2-47F7-A3DB-71EF7266FDF4">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>false</value>
+              </condition>
+            </right>
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="38AEB646-C893-49AA-B11E-4B076D0B5E52" tableColumnId="1947B6BE-FB8A-4F45-BD50-2A6D467C856D">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+      <collection id="6CAC65D2-2538-4D02-B11A-034C3FC2C4D3" tableColumnId="A90F61D6-3102-4F39-9842-AFA1E055E990">
+        <application>
+          <right type="EDIT">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+          <right type="VIEW">
+            <condition type="boolean">
+              <value>false</value>
+            </condition>
+          </right>
+        </application>
+        <groups>
+          <group id="5B3B7072-3293-4B6C-A967-49C963471DD2">
+            <right type="VIEW">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+            <right type="EDIT">
+              <condition type="boolean">
+                <value>true</value>
+              </condition>
+            </right>
+          </group>
+        </groups>
+      </collection>
+    </tableColumnRights>
+    <eventRights/>
+  </rights>
+</application>
