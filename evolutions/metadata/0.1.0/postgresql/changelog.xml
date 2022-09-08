@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property
+            name="date_now"
+            value="now()"
+            dbms="postgresql"/>
+
+    <changeSet
+            id="whirl-admin_0.1.0"
+            author="otlichnosti@gmail.com"
+            failOnError="true"
+            dbms="postgresql">
+
+        <sql>
+            CREATE SCHEMA IF NOT EXISTS whirl_admin
+        </sql>
+
+        <sql>
+            CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA whirl_admin
+        </sql>
+
+        <insert tableName="WHIRL_USER_GROUPS">
+            <column
+                    name="DELETED"
+                    type="boolean"/>
+            <column
+                    name="R_WHIRL_USERS"
+                    type="number"
+                    valueComputed="(SELECT U.ID FROM WHIRL_USERS U WHERE U.LOGIN = 'whirl-admin')"/>
+            <column
+                    name="GROUP_CODE"
+                    type="varchar(4000)"
+                    value="whirl-admin-group"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="WHIRL_USER_GROUPS">
+                <where>R_WHIRL_USERS = (SELECT U.ID FROM WHIRL_USERS U WHERE U.LOGIN = 'whirl-admin')</where>
+            </delete>
+            <sql>
+                DROP EXTENSION IF EXISTS pgcrypto WITH SCHEMA whirl_admin
+            </sql>
+            <sql>
+                DROP SCHEMA whirl_admin
+            </sql>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
