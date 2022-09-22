@@ -35,7 +35,7 @@
             <column
                     name="GROUP_CODE"
                     type="varchar(4000)"
-                    value="whirl-admin-group"/>
+                    value="whirl-admin-admin"/>
         </insert>
 
         <rollback>
