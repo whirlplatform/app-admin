@@ -38,6 +38,18 @@
                     value="whirl-admin-admin"/>
         </insert>
 
+        <createProcedure schemaName="whirl-admin" procedureName="save_user"
+                         path="save_user.sql"
+                         relativeToChangelogFile="true"/>
+
+        <createProcedure schemaName="whirl-admin" procedureName="update_user"
+                         path="update_user.sql"
+                         relativeToChangelogFile="true"/>
+
+        <createProcedure schemaName="whirl-admin" procedureName="delete_user"
+                         path="delete_user.sql"
+                         relativeToChangelogFile="true"/>
+
         <rollback>
             <delete tableName="WHIRL_USER_GROUPS">
                 <where>R_WHIRL_USERS = (SELECT U.ID FROM WHIRL_USERS U WHERE U.LOGIN = 'whirl-admin')</where>
@@ -48,7 +60,12 @@
             <sql>
                 DROP SCHEMA whirl_admin
             </sql>
+
+            <dropProcedure procedureName="save_user"/>
+            <dropProcedure procedureName="update_user"/>
+            <dropProcedure procedureName="delete_user"/>
         </rollback>
+
     </changeSet>
 
 </databaseChangeLog>
