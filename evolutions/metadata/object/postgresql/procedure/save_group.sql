@@ -27,16 +27,26 @@ begin
                 name
             )
             values(
-                      v_api_result.list_name[i].id::int,
-                      p_group_code,
-                      p_group_code
-                  );
+                  v_api_result.list_name[i].id::int,
+                  p_group_code,
+                  p_group_code
+            );
         END loop;
 
     if array_length(v_api_result.list_name, 1) = 1 then
-        return as_result(set_message(v_result, 'Message', CONCAT('Group was successfully created!(', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO'));
+        return as_result(
+            set_message(
+                v_result,
+                'Message',
+                CONCAT('Group was successfully created!(', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO')
+            );
     else
-        return as_result(set_message(v_result, 'Message', CONCAT('Groups were successfully created! (', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO'));
+        return as_result(
+            set_message(
+                v_result,
+                'Message',
+                CONCAT('Groups were successfully created! (', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO')
+            );
     end if;
 END;
 $function$
