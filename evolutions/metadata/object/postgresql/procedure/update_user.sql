@@ -37,7 +37,7 @@ begin
             email = p_new_email,
             password_hash = crypt(p_new_password, gen_salt('bf'))
         where
-                id = p_current_id::int;
+            id = p_current_id::int;
     else
         update whirl_users
         set

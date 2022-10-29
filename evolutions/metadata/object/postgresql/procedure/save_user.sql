@@ -29,7 +29,23 @@ begin
     if p_new_password_repeat != p_new_password then
         return as_result(set_message(v_result, 'Message', 'Password fields are not equal!', 'ERROR'));
     end if;
-    insert into whirl_users(login, name, email, password_hash, creation_date) values(CONCAT('user', get_last_id()), p_new_username, p_new_email, crypt(p_new_password, gen_salt('bf')), NOW());
+
+    insert into
+    whirl_users(
+            login,
+            name,
+            email,
+            password_hash,
+            creation_date
+            )
+    values(
+            CONCAT('user', get_last_id()),
+            p_new_username,
+            p_new_email,
+            crypt(p_new_password,
+            gen_salt('bf')),
+            NOW()
+            );
 
     return as_result(set_message(v_result, 'Message', 'User was successfully created!', 'INFO'));
 END;
