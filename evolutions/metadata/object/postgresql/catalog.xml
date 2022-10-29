@@ -32,5 +32,22 @@
         </rollback>
     </changeSet>
 
+    <changeSet id="delete_group" author="whirl-admin" runOnChange="true" failOnError="true" dbms="postgresql">
+        <createProcedure procedureName="delete_group"
+                         path="procedure/delete_group.sql"
+                         relativeToChangelogFile="true"/>
+        <rollback>
+            <dropProcedure procedureName="delete_group"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="save_group" author="whirl-admin" runOnChange="true" failOnError="true" dbms="postgresql">
+        <createProcedure procedureName="save_group"
+                         path="procedure/save_group.sql"
+                         relativeToChangelogFile="true"/>
+        <rollback>
+            <dropProcedure procedureName="save_group"/>
+        </rollback>
+    </changeSet>
 
 </databaseChangeLog>
