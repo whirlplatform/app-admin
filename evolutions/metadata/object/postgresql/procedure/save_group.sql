@@ -5,6 +5,7 @@ AS $function$
 declare
     v_result function_result;
     v_api_result row_list;
+    v_count int = 0;
 begin
     v_result.title := 'Result from database';
     v_result.message := p_field;
@@ -20,33 +21,46 @@ begin
     v_api_result.list_name := parse_row_list(v_result.message);
 
     FOR i IN 1 .. array_length(v_api_result.list_name, 1) loop
-            insert into
-                whirl_user_groups(
-                r_whirl_users,
-                group_code,
-                name
-            )
-            values(
-                  v_api_result.list_name[i].id::int,
-                  p_group_code,
-                  p_group_code
-            );
+            if (select exists(select 1
+                              from whirl_user_groups wug
+                              where
+                                      wug.r_whirl_users = v_api_result.list_name[i].id::int
+                                and
+                                      p_group_code =  wug.group_code))
+            then
+                -- do nothing --
+            else
+                v_count := v_count + 1;
+                insert into
+                    whirl_user_groups(
+                    r_whirl_users,
+                    group_code,
+                    name
+                )
+                values(
+                          v_api_result.list_name[i].id::int,
+                          p_group_code,
+                          p_group_code
+                      );
+            end if;
         END loop;
 
-    if array_length(v_api_result.list_name, 1) = 1 then
-        return as_result(
-            set_message(
-                v_result,
-                'Message',
-                CONCAT('Group was successfully created!(', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO')
-            );
+    if v_count = array_length(v_api_result.list_name, 1) then
+        if array_length(v_api_result.list_name, 1) = 1 then
+            return as_result(set_message(v_result, 'Message', CONCAT('Group was successfully created!(', v_count::text, ')'), 'INFO'));
+        else
+            return as_result(set_message(v_result, 'Message', CONCAT('Groups were successfully created! (', v_count::text, ')'), 'INFO'));
+        end if;
     else
-        return as_result(
-            set_message(
-                v_result,
-                'Message',
-                CONCAT('Groups were successfully created! (', array_length(v_api_result.list_name, 1)::text, ')'), 'INFO')
-            );
+        if array_length(v_api_result.list_name, 1) = 1 then
+            return as_result(set_message(v_result, 'Message', CONCAT('This user already has this group!'), 'INFO'));
+        else
+            if v_count = 0 then
+                return as_result(set_message(v_result, 'Message', CONCAT('All selected users already have these groups!'), 'INFO'));
+            else
+                return as_result(set_message(v_result, 'Message', CONCAT('Groups were successfully created! (amount of created rows: ', v_count::text, ')', '(some groups was not created because of the dublication)'), 'INFO'));
+            end if;
+        end if;
     end if;
 END;
 $function$
